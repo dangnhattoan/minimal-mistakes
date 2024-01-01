@@ -268,6 +268,10 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
+collections:
+  cpp:
+    output: true
+    permalink: /:collection/:path/
 
 # HTML Compression
 # - https://jch.penibelst.de/
@@ -290,3 +294,13 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _cpp
+  - scope:
+      path: ""
+      type: cpp
+    values:
+      layout: single
+      author_profile: false
+      comments: true
+      related: true
+      share: true
